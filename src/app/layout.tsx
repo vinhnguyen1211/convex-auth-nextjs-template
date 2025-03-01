@@ -24,6 +24,7 @@ export default async function RootLayout({
     {},
     { token: await convexAuthNextjsToken() },
   );
+  console.log(' user:', user)
 
   return (
     <ConvexAuthNextjsServerProvider>

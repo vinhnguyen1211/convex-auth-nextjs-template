@@ -31,6 +31,10 @@ export function AuthProvider({ children, user }: { children: ReactNode, user?: D
     }
   }, [token]);
 
+  useEffect(() => {
+    
+  }, [user]);
+
   // Provide the auth context value
   const value = {
     user,
